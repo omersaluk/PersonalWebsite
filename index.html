@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ömer Faruk Saluk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_query.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            Ömer Faruk Saluk
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            Ömer Faruk Saluk
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="./assets/profile-pic.png" alt="">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello I'm</p>
+            <h1 class="title">Ömer Faruk Saluk</h1>
+            <p class="section_text_p2">I'm a Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/cv.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="" class="icon"
+                onclick="location.href='https://www.linkedin.com/in/omersaluk/'">
+                <img src="./assets/github.png" alt="" class="icon"
+                onclick="location.href='https://github.com/omersaluk'">
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="" class="icon arrow" 
+        onclick="location.href='./#about'">
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container"> 
+            <div class="section-pic-container">
+                <img src="./assets/about-pic.png" alt="" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="" class="icon">
+                        <h3>Experience</h3>
+                        <p>1 year <br> Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="" class="icon">
+                        <h3>Education</h3>
+                        <p>Computer Engineering <br> Bachelors Degree </p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/expertise.png" alt="" class="icon">
+                        <h3>Expertise</h3>
+                        <p>Mobile <br> Programming </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p><h4>My Hobbies</h4>In my free time, I enjoy walking and photography. <br></p>
+                       <p><h4>My Interests</h4>I am particularly interested in technology and the cryptocurrency market. I also love traveling to explore different cultures.</p>
+                       <p><h4>My Values</h4>I believe in being honest and having strong moral principles in all my professional and personal endeavors. <br></p>
+                       <p><h4>My Mission</h4>As a software developer, my mission is to create reliable, scalable, and user-friendly software solutions. I am committed to writing clean, efficient code and continuously learning new technologies. 
+                        My goal is to contribute to innovative projects that drive progress and make a positive impact in the tech industry.</p>
+                        
+                    
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="" class="icon arrow" 
+        onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <h2 class="experience-subtitle">in Development</h2>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <div class="article-container">
+                       
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>C#</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>Flutter</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>Firebase</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>CSS3</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>Bootstrap 4</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="" class="icon arrow" 
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.png" alt="" class="project-img">
+                </div>
+                <h2 class="experience-subtitle project-title">
+                    Project 1
+                </h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/omersaluk'">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="" class="project-img">
+                </div>
+                <h2 class="experience-subtitle project-title">
+                    Project 2
+                </h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/omersaluk'">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-3.png" alt="" class="project-img">
+                </div>
+                <h2 class="experience-subtitle project-title">
+                    Project 3
+                </h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/omersaluk'">
+                        Github
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="" class="icon arrow" 
+        onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="" class="icon contact-icon email-icon">
+                <p><a href="mailto:omer@saluk.com.tr">omer@saluk.com.tr</a></p>
+            </div>
+        
+        
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/omersaluk/">LinkedIn</a></p>
+            </div>
+        </div> 
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Darth Vader. <br> From the Dark Side</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
