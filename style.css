@@ -22,16 +22,6 @@ p {
     color: var(--primary-color);
 }
 
-#languageSelect {
-    margin-left: 10px;
-    padding: 5px;
-    font-size: 14px;
-    border: 1px solid var(--fifth-color);
-    border-radius: 5px;
-    background-color: var(--secondary-color);
-    cursor: pointer;
-}
-
 :root {
     --primary-color: rgb(85, 85, 85);
     --secondary-color: rgb(181, 181, 181);
@@ -60,40 +50,47 @@ li.dropdown {
 }
 
 .dropbtn {
-    background-color: white;
+    background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
 .world-icon {
-    width: 24px;
-    height: 24px;
+    height: 1.5rem;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: var(--sixht-color);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
+    color: var(--seventh-color);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: var(--sixht-color);
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
+.extras {
+    position:relative;
+    display: flex;
+    gap: 1rem;
+    padding-left: 1rem;
+    top: 1rem;
+    list-style: none;
+}
 
 /* Transition */
 
@@ -309,6 +306,7 @@ section {
 
 .btn-color-1 {
     color: var(--fourth-color);
+    border: var(--secondary-color) 0.1rem solid;
 }
 
 .btn-color-1:hover, .btn-color-2:hover {
@@ -327,10 +325,7 @@ section {
 .btn-color-2 {
     background: var(--seventh-color);
     color: var(--fourth-color);
-}
-
-.btn-color-2:hover {
-    
+    border: var(--seventh-color) 0.1rem solid;
 }
 
 .head {
@@ -473,7 +468,7 @@ article {
 
 .project-btn {
     color: var(--sixht-color);
-    border-color: var(--third-color);
+    border: var(--sixht-color) 0.1rem solid;
 }
 
 /* Contact */
