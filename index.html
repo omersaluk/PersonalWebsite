@@ -8,16 +8,30 @@
     <link rel="stylesheet" href="media_query.css">
 </head>
 <body>
+    <div>
+        <ul>
+            <li><img src="./assets/moon.png" alt="" class="dark" id="switch"></li>
+        <li class="dropdown">
+            <button class="dropbtn">
+                <img src="world_icon.png" alt="World Icon" class="world-icon">
+            </button>
+            <div class="dropdown-content">
+                <a href="#" onclick="changeLanguage('en')">English</a>
+                <a href="#" onclick="changeLanguage('tr')">Türkçe</a>
+            </div>
+        </li>
+        </ul>
+    </div>
     <nav id="desktop-nav">
         <div class="logo">
             Ömer Faruk Saluk
         </div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" data-key="about">About</a></li>
+                <li><a href="#experience" data-key="experience">Experience</a></li>
+                <li><a href="#projects" data-key="projects">Projects</a></li>
+                <li><a href="#contact" data-key="contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -32,10 +46,10 @@
             <span></span>
             </div>
         <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li><a href="#about" onclick="toggleMenu()" data-key="about">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()" data-key="experience">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()" data-key="projects">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()" data-key="contact">Contact</a></li>
         </div>
         </div>
     </nav>
@@ -44,12 +58,12 @@
             <img src="./assets/profile-pic.png" alt="">
         </div>
         <div class="section_text">
-            <p class="section_text_p1">Hello I'm</p>
+            <p class="section_text_p1" data-key="hello">Hello I'm</p>
             <h1 class="title">Ömer Faruk Saluk</h1>
-            <p class="section_text_p2">I'm a Developer</p>
+            <p class="section_text_p2" data-key="developer">I'm a Developer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/cv.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/cv.pdf')" data-key="downloadCV">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'" data-key="contact">Contact</button>
             </div>
             <div id="socials-container">
                 <img src="./assets/linkedin.png" alt="" class="icon"
@@ -62,8 +76,8 @@
         onclick="location.href='./#about'">
     </section>
     <section id="about">
-        <p class="section_text_p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
+        <p class="section_text_p1" data-key="title">Get to Know More</p>
+        <h1 class="title" data-key="aboutMeTitle">About Me</h1>
         <div class="section-container"> 
             <div class="section-pic-container">
                 <img src="./assets/about-pic.png" alt="" class="about-pic">
@@ -72,28 +86,30 @@
                 <div class="about-containers">
                     <div class="details-container">
                         <img src="./assets/experience.png" alt="" class="icon">
-                        <h3>Experience</h3>
-                        <p>1 year <br> Development</p>
+                        <h3 data-key="experience" class="header">Experience</h3>
+                        <p data-key="year" class="head">1 year <br> Development</p>
                     </div>
                     <div class="details-container">
                         <img src="./assets/education.png" alt="" class="icon">
-                        <h3>Education</h3>
-                        <p>Computer Engineering <br> Bachelors Degree </p>
+                        <h3 data-key="education" class="header">Education</h3>
+                        <p data-key="ceng" class="head">Computer Engineering <br> Bachelors Degree</p>
                     </div>
                     <div class="details-container">
                         <img src="./assets/expertise.png" alt="" class="icon">
-                        <h3>Expertise</h3>
-                        <p>Mobile <br> Programming </p>
+                        <h3 data-key="expertise" class="header">Expertise</h3>
+                        <p data-key="mobile" class="head">Mobile <br> Programming</p>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p><h4>My Hobbies</h4>In my free time, I enjoy walking and photography. <br></p>
-                       <p><h4>My Interests</h4>I am particularly interested in technology and the cryptocurrency market. I also love traveling to explore different cultures.</p>
-                       <p><h4>My Values</h4>I believe in being honest and having strong moral principles in all my professional and personal endeavors. <br></p>
-                       <p><h4>My Mission</h4>As a software developer, my mission is to create reliable, scalable, and user-friendly software solutions. I am committed to writing clean, efficient code and continuously learning new technologies. 
-                        My goal is to contribute to innovative projects that drive progress and make a positive impact in the tech industry.</p>
-                        
-                    
+                    <h4 data-key="hobbiesTitle" class="header">My Hobbies</h4>
+    <p data-key="hobbies" class="head">In my free time, I enjoy walking and photography. <br></p>
+    <h4 data-key="interestTitle" class="header">My Interests</h4>
+    <p data-key="interest" class="head">I am particularly interested in technology and the cryptocurrency market. I also love traveling to explore different cultures.</p>
+    <h4 data-key="valuesTitle" class="header">My Values</h4>
+    <p data-key="values" class="head">I believe in being honest and having strong moral principles in all my professional and personal endeavors. <br></p>
+    <h4 data-key="missionTitle" class="header">My Mission</h4>
+    <p data-key="mission" class="head">As a software developer, my mission is to create reliable, scalable, and user-friendly software solutions. I am committed to writing clean, efficient code and continuously learning new technologies. 
+        My goal is to contribute to innovative projects that drive progress and make a positive impact in the tech industry.</p>
                 </div>
             </div>
         </div>
@@ -101,9 +117,9 @@
         onclick="location.href='./#experience'">
     </section>
     <section id="experience">
-        <p class="section_text_p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <h2 class="experience-subtitle">in Development</h2>
+        <p class="section_text_p1" data-key="explore">Explore My</p>
+        <h1 class="title" data-key="exp">Experience</h1>
+        <h2 class="experience-subtitle" data-key="develop">in Development</h2>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container">
@@ -112,44 +128,44 @@
                         <article>
                             <img src="./assets/checkmark.png" alt="" class="icon">
                             <div>
-                                <h3>C#</h3>
-                                <p>Beginner</p>
+                                <h3 class="head">C#</h3>
+                                <p data-key="beginner">Beginner</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="" class="icon">
                             <div>
-                                <h3>Java</h3>
-                                <p>Intermediate</p>
+                                <h3 class="head">Java</h3>
+                                <p data-key="intermediate">Intermediate</p>
                             </div>
                         </article>
                         
                         <article>
                             <img src="./assets/checkmark.png" alt="" class="icon">
                             <div>
-                                <h3>Flutter</h3>
-                                <p>Beginner</p>
+                                <h3 class="head">Flutter</h3>
+                                <p data-key="beginner">Beginner</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="" class="icon">
                             <div>
-                                <h3>SQL</h3>
-                                <p>Intermediate</p>
+                                <h3 class="head">SQL</h3>
+                                <p data-key="intermediate">Intermediate</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="" class="icon">
                             <div>
-                                <h3>Firebase</h3>
-                                <p>Beginner</p>
+                                <h3 class="head">Firebase</h3>
+                                <p data-key="beginner">Beginner</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="" class="icon">
                             <div>
-                                <h3>Git</h3>
-                                <p>Experienced</p>
+                                <h3 class="head">Git</h3>
+                                <p data-key="experienced">Experienced</p>
                             </div>
                         </article>
                     </div>
@@ -159,36 +175,36 @@
                         <article>
                             <img src="./assets/checkmark.png" alt="" class="icon">
                             <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
+                                <h3 class="head">HTML</h3>
+                                <p data-key="experience">Experienced</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="" class="icon">
                             <div>
-                                <h3>CSS3</h3>
-                                <p>Experienced</p>
+                                <h3 class="head">CSS3</h3>
+                                <p data-key="experience">Experienced</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="" class="icon">
                             <div>
-                                <h3>Bootstrap 4</h3>
-                                <p>Experienced</p>
+                                <h3 class="head">Bootstrap 4</h3>
+                                <p data-key="experience">Experienced</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="" class="icon">
                             <div>
-                                <h3>JavaScript</h3>
-                                <p>Beginner</p>
+                                <h3 class="head">JavaScript</h3>
+                                <p data-key="beginner">Beginner</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="" class="icon">
                             <div>
-                                <h3>PHP</h3>
-                                <p>Beginner</p>
+                                <h3 class="head">PHP</h3>
+                                <p data-key="beginner">Beginner</p>
                             </div>
                         </article>
                     </div>
@@ -199,16 +215,16 @@
         onclick="location.href='./#projects'">
     </section>
     <section id="projects">
-        <p class="section_text_p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
+        <p class="section_text_p1" data-key="browse">Browse My Recent</p>
+        <h1 class="title" data-key="projects">Projects</h1>
         <div class="experience-details-container">
             <div class="about-containers">
             <div class="details-container color-container">
                 <div class="article-container">
                     <img src="./assets/project-1.png" alt="" class="project-img">
                 </div>
-                <h2 class="experience-subtitle project-title">
-                    Project 1
+                <h2 class="experience-subtitle project-title" data-key="weather">
+                    Weather App
                 </h2>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/omersaluk'">
@@ -220,8 +236,8 @@
                 <div class="article-container">
                     <img src="./assets/project-2.png" alt="" class="project-img">
                 </div>
-                <h2 class="experience-subtitle project-title">
-                    Project 2
+                <h2 class="experience-subtitle project-title" data-key="track">
+                    Crypto Track App
                 </h2>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/omersaluk'">
@@ -233,8 +249,8 @@
                 <div class="article-container">
                     <img src="./assets/project-3.png" alt="" class="project-img">
                 </div>
-                <h2 class="experience-subtitle project-title">
-                    Project 3
+                <h2 class="experience-subtitle project-title" data-key="todo">
+                    ToDo App
                 </h2>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/omersaluk'">
@@ -248,8 +264,8 @@
         onclick="location.href='./#contact'">
     </section>
     <section id="contact">
-        <p class="section_text_p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
+        <p class="section_text_p1" data-key="touch">Get in Touch</p>
+        <h1 class="title" data-key="contact">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
                 <img src="./assets/email.png" alt="" class="icon contact-icon email-icon">
@@ -267,15 +283,22 @@
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" data-key="about">About</a></li>
+                    <li><a href="#experience" data-key="experience">Experience</a></li>
+                    <li><a href="#projects" data-key="projects">Projects</a></li>
+                    <li><a href="#contact" data-key="contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
         <p>Copyright &#169; 2024 Darth Vader. <br> From the Dark Side</p>
     </footer>
     <script src="script.js"></script>
+    <script src="translations.js"></script>
+    <script>
+       
+    </script>
+    <script>
+       
+    </script>
 </body>
 </html>
