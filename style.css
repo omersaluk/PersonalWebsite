@@ -64,7 +64,7 @@ li.dropdown {
     position: absolute;
     background-color: var(--sixht-color);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px var(--secondary-color);
     z-index: 1;
 }
 
@@ -137,6 +137,43 @@ a:hover {
 .logo:hover {
     cursor:help;
 }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 5rem;
+    font-size: 1rem;
+    background-color: var(--seventh-color);
+    color: var(--sixht-color);
+    text-align: center;
+    border-radius: 1rem;
+    padding: .8rem .8rem;
+    position: absolute;
+    top: 50%;
+    left: 105%;  
+    transform: translateY(-50%);
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent var(--seventh-color) transparent transparent;
+}
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
 
 .dark {
     width: 1.5rem;

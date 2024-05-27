@@ -1,6 +1,7 @@
 const translations = {
     en: {
         about: "About",
+        tooltip:"Yes?",
         experience: "Experience",
         projects: "Projects",
         contact: "Contact",
@@ -36,6 +37,7 @@ const translations = {
     },
     tr: {
         about: "Hakkımda",
+        tooltip:"Buyrun?",
         experience: "Deneyim",
         projects: "Projelerim",
         contact: "İletişim",
