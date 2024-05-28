@@ -56,21 +56,21 @@ li.dropdown {
 }
 
 .world-icon {
-    height: 1.5rem;
+    height: 1.7rem;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: var(--sixht-color);
-    min-width: 160px;
     box-shadow: 0px 8px 16px 0px var(--secondary-color);
     z-index: 1;
+    font-size: 1.2rem;
 }
 
 .dropdown-content a {
     color: var(--seventh-color);
-    padding: 12px 16px;
+    padding: 14px 12px;
     text-decoration: none;
     display: block;
 }
@@ -80,15 +80,14 @@ li.dropdown {
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display:block;
+    position:fixed;
 }
 
 .extras {
-    position:relative;
+    justify-content: center;
     display: flex;
     gap: 1rem;
-    padding-left: 1rem;
-    top: 1rem;
     list-style: none;
 }
 
@@ -176,7 +175,7 @@ a:hover {
   }
 
 .dark {
-    width: 1.5rem;
+    width: 1.7rem;
     cursor: pointer;
 }
 
@@ -232,10 +231,11 @@ a:hover {
 .menu-links li {
     list-style: none;
     text-align: center;
+    align-content: center;
 }
 
 .menu-links.open {
-    max-height: 300px;
+    max-height: 600px;
 }
 
 .hamburger-icon.open span:first-child {

@@ -8,20 +8,6 @@
     <link rel="stylesheet" href="media_query.css">
 </head>
 <body>
-    <div>
-        <ul class="extras">
-            <li><img src="./assets/moon.png" alt="" class="dark" id="switch"></li>
-        <li class="dropdown">
-            <button class="dropbtn">
-                <img src="./assets/earth.png" alt="" class="world-icon">
-            </button>
-            <div class="dropdown-content">
-                <a href="#" onclick="changeLanguage('en')">English</a>
-                <a href="#" onclick="changeLanguage('tr')">Türkçe</a>
-            </div>
-        </li>
-        </ul>
-    </div>
     <nav id="desktop-nav">
         <div class="logo tooltip">
             Ömer Faruk Saluk
@@ -33,6 +19,20 @@
                 <li><a href="#experience" data-key="experience">Experience</a></li>
                 <li><a href="#projects" data-key="projects">Projects</a></li>
                 <li><a href="#contact" data-key="contact">Contact</a></li>
+                <div>
+                    <ul class="extras">
+                        <li class="dropdown">
+                            <button class="dropbtn">
+                                <img src="./assets/world-icon.png" data-dark="./assets/world-icon-dark.png" alt="" class="world-icon dark-mode-image">
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#" onclick="changeLanguage('en')">English</a>
+                                <a href="#" onclick="changeLanguage('tr')">Türkçe</a>
+                            </div>
+                        </li>
+                        <li><img src="./assets/theme_light.png" alt="" class="dark" id="switch"></li>
+                    </ul>
+                </div>
             </ul>
         </div>
     </nav>
@@ -51,6 +51,20 @@
             <li><a href="#experience" onclick="toggleMenu()" data-key="experience">Experience</a></li>
             <li><a href="#projects" onclick="toggleMenu()" data-key="projects">Projects</a></li>
             <li><a href="#contact" onclick="toggleMenu()" data-key="contact">Contact</a></li>
+            <div>
+        <ul class="extras">
+            <li class="dropdown">
+                <button class="dropbtn">
+                    <img src="./assets/world-icon.png" data-dark="./assets/world-icon-dark.png" alt="" class="world-icon dark-mode-image">
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="changeLanguage('en')">English</a>
+                    <a href="#" onclick="changeLanguage('tr')">Türkçe</a>
+                </div>
+            </li>
+            <li><img src="./assets/theme_light.png" alt="" class="dark" id="switch2"></li>
+        </ul>
+    </div>
         </div>
         </div>
     </nav>
@@ -67,10 +81,13 @@
                 <button class="btn btn-color-1" onclick="location.href='./#contact'" data-key="contact">Contact</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="" class="icon"
-                onclick="location.href='https://www.linkedin.com/in/omersaluk/'">
-                <img src="./assets/github.png" alt="" class="icon"
-                onclick="location.href='https://github.com/omersaluk'">
+                <a href="https://www.linkedin.com/in/omersaluk/" target="_blank">
+                    <img src="./assets/linkedin.png" data-dark="./assets/linkedin-dark.png" alt="" class="icon dark-mode-image ">
+                </a>
+
+                <a href="https://github.com/omersaluk" target="_blank">
+                    <img src="./assets/github.png" data-dark="./assets/github-dark.png" alt="" class="icon dark-mode-image">
+                </a>
             </div>
         </div>
         <img src="./assets/arrow.png" alt="" class="icon arrow" 
@@ -276,7 +293,7 @@
         
             <div class="contact-info-container">
                 <img src="./assets/linkedin.png" data-dark="./assets/linkedin-dark.png" alt="" class="icon contact-icon dark-mode-image">
-                <p><a href="https://www.linkedin.com/in/omersaluk/">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/omersaluk/" target="_blank">LinkedIn</a></p>
             </div>
         </div> 
     </section>

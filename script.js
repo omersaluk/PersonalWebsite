@@ -42,15 +42,16 @@ window.onload = function() {
 };
 
 var icon = document.getElementById("switch");
+var icon2 = document.getElementById("switch2");
 
 icon.onclick = function () {
     document.body.classList.toggle("dark-theme");
     
     // Toggle the icon image
     if (document.body.classList.contains("dark-theme")) {
-        icon.src = "./assets/sun.png";
+        icon.src = "./assets/theme_light.png";
     } else {
-        icon.src = "./assets/moon.png";
+        icon.src = "./assets/theme_dark.png";
     }
     
     // Toggle images for dark mode
@@ -64,6 +65,8 @@ icon.onclick = function () {
     });
 }
 
+
+
 // Save the original src of the images on page load
 window.onload = function() {
     const images = document.querySelectorAll('.dark-mode-image');
@@ -74,24 +77,26 @@ window.onload = function() {
     // Check if dark mode was previously enabled
     if (localStorage.getItem('darkMode') === 'enabled') {
         document.body.classList.add('dark-theme');
-        icon.src = "./assets/sun.png";
+        icon.src = "./assets/theme_dark.png";
         images.forEach(img => {
             img.src = img.getAttribute('data-dark');
         });
     } else {
-        icon.src = "./assets/moon.png";
+        icon.src = "./assets/theme_light.png";
     }
 }
+
+
 
 // Save dark mode preference in localStorage
 icon.onclick = function () {
     document.body.classList.toggle("dark-theme");
     
     if (document.body.classList.contains("dark-theme")) {
-        icon.src = "./assets/sun.png";
+        icon.src = "./assets/theme_dark.png";
         localStorage.setItem('darkMode', 'enabled');
     } else {
-        icon.src = "./assets/moon.png";
+        icon.src = "./assets/theme_light.png";
         localStorage.setItem('darkMode', 'disabled');
     }
 
@@ -104,4 +109,31 @@ icon.onclick = function () {
             img.src = img.getAttribute('data-original');
         }
     });
+
+    
 }
+
+icon2.onclick = function () {
+    document.body.classList.toggle("dark-theme");
+    
+    if (document.body.classList.contains("dark-theme")) {
+        icon2.src = "./assets/theme_dark.png";
+        localStorage.setItem('darkMode', 'enabled');
+    } else {
+        icon2.src = "./assets/theme_light.png";
+        localStorage.setItem('darkMode', 'disabled');
+    }
+
+    // Toggle images for dark mode
+    const images = document.querySelectorAll('.dark-mode-image');
+    images.forEach(img => {
+        if (document.body.classList.contains("dark-theme")) {
+            img.src = img.getAttribute('data-dark');
+        } else {
+            img.src = img.getAttribute('data-original');
+        }
+    });
+
+    
+}
+
