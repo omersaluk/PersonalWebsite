@@ -5,7 +5,7 @@ const translations = {
         experience: "Experience",
         projects: "Projects",
         contact: "Contact",
-        hello: "Hello I'm",
+        hello: "Hello, Here's",
         developer: "I'm a Developer",
         downloadCV: "Download CV",
         title: "Get to Know More",
